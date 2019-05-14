@@ -1,9 +1,9 @@
 public class ControlFlowExercises {
     public static void main(String[] args) {
-        int i=0;
+        int i=105;
         do{
-            System.out.println(i+2);
-            i++;
-        }while(i<=98);
+            System.out.println(i-5);
+            i--;
+        }while(i>=-5);
     }
 }
