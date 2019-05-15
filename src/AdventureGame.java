@@ -111,17 +111,19 @@ public class AdventureGame {
         switch(difficulty) {
 
             case ("1"):
-                System.out.println("＾･ꀾ･＾" + "\n" + "Ready!");
+                System.out.println("＾･ꀾ･＾" + "\n" + "BEGIN!");
                 break;
 
             case ("2"):
-                System.out.println("ฅ^•ﻌ•^ฅ" + "/̵͇̿̿/'̿̿ ̿̿ ̿̿ " + "\n" + "Ready!");
+                System.out.println("ฅ^•ﻌ•^ฅ" + "/̵͇̿̿/'̿̿ ̿̿ ̿̿ " + "\n" + "BEGIN!");
                 break;
 
             case ("3"):
-                System.out.println("(⌐■_■)--︻╦╤─" + "\n" + "Ready!");
+                System.out.println("(⌐■_■)--︻╦╤─" + "\n" + "BEGIN!");
                 break;
         }
+
+
 
     }
 }
