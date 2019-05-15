@@ -1,14 +1,19 @@
+import java.util.Scanner;
 public class ControlFlowExercises {
     public static void main(String[] args) {
-        for(int i = 1; i <= 100; i++){
-            if(i%15 ==0){
-                System.out.println("FizzBUzz");
-            }else if(i%5==0){
-                System.out.println("Buzz");
-            }else if(i%3==0){
-                System.out.println("Fizz");
-            }else{
-                System.out.println(i);
+        System.out.println("Please enter an integer:");
+        Scanner sc = new Scanner(System.in).useDelimiter("\n");
+        int userInput = sc.nextInt();
+        System.out.println("Do you want to continue?");
+        String answer = sc.next();
+        System.out.println("Here is your table:");
+        System.out.println("Number | squared | cubed");
+        System.out.println("------ | ------- | ------");
+        if(answer.equalsIgnoreCase("yes")){
+            for(int i = 1; i<=userInput; i++){
+                int squared = i*i;
+                int cubed = i*i*i;
+                System.out.printf("%-7d|%-9d|%-6d%n",i ,squared, cubed);
             }
         }
     }
