@@ -94,14 +94,14 @@ public class AdventureGame {
 
         System.out.printf("Hello, %s! Are you ready for your adventure?", name);
         String play = sc.next();
-       if(play.equals("yes")){
+       if(play.equalsIgnoreCase("yes")){
            System.out.println("̿' ̿'\\̵͇̿̿\\з=(◕_◕)=ε/̵͇̿̿/'̿'̿ ̿ " + "\n" +
                "   " +   "!!!LETS GO!!!");
 
            System.out.println("Choose Difficulty:");
            System.out.println("1 = Easy" + "\n" + "2 = Medium" + "\n" + "3 = Hard");
 
-       }else if(play.equals("no")){
+       }else if(play.equalsIgnoreCase("no")){
            System.out.println("                  ʕಠᴥಠʔ ಠ_ಠ ᶘಠᴥಠᶅʕಠᴥಠʔ ಠ_ಠ ᶘಠᴥಠᶅʕಠᴥಠʔ ಠ_ಠ ᶘಠᴥಠᶅ");
            System.out.println(" *・゜You・*:.。have*.。the.:*・moral☆・゜backbone・*:.。of.*.。.a.:*・chocolate☆・゜eclair・*:");
            System.exit(0);
@@ -122,8 +122,6 @@ public class AdventureGame {
                 System.out.println("(⌐■_■)--︻╦╤─" + "\n" + "BEGIN!");
                 break;
         }
-
-
 
     }
 }
