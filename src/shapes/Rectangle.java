@@ -1,30 +1,16 @@
 package shapes;
-//import java.util.Scanner;
 
-public class Rectangle {
+public class Rectangle extends Quadrilateral implements Measurable{
 
-//   static Scanner sc=new Scanner(System.in);
+    public void setLength(double length){
+        super.length=length;
+    }
 
-    protected static double length;
-    protected static double width;
-
-    public Rectangle() {
+    public void setWidth(double width){
+        super.width=width;
     }
 
     public Rectangle(double length, double width){
-//        System.out.println("Please Enter an Integer:");
-//        this.length = sc.nextInt();
-//        System.out.println("Please Enter an Integer:");
-//        this.width=sc.nextInt();
-        this.length = length;
-        this.width = width;
-    }
-
-    public double getArea() {
-        return this.length*this.width;
-    }
-
-    public double getPerimeter() {
-        return (2*this.length)+(2*this.width);
+        super(length, width);
     }
 }

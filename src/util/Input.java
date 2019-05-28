@@ -29,12 +29,26 @@ public class Input {
         return num;
     }
 
-        public int getInt(){
-            return Integer.parseInt(getString("Please Enter a Number"));
+        public int getInt() {
+            int number;
+            try {
+                number = Integer.valueOf(getString("Please Enter a Number"));
+            } catch (NumberFormatException nfe) {
+                System.out.println("Invalid input");
+                return getInt();
+            }
+            return number;
         }
 
         public double getDouble(){
-        return Double.parseDouble(getString("Please Enter a Decimal"));
+        double number;
+        try{
+            number = Double.valueOf(getString("Please Enter a Decimal"));
+        }catch(NumberFormatException nfe){
+            System.out.println("Invalid input");
+            return getDouble();
+        }
+        return number;
     }
 
     public double getDouble(double min, double max){

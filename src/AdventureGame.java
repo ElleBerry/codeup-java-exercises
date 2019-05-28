@@ -95,8 +95,8 @@ public class AdventureGame {
         System.out.printf("Hello, %s! Are you ready for your adventure?", name);
         String play = sc.next();
        if(play.equalsIgnoreCase("yes")){
-           System.out.println("̿' ̿'\\̵͇̿̿\\з=(◕_◕)=ε/̵͇̿̿/'̿'̿ ̿ " + "\n" +
-               "   " +   "!!!LETS GO!!!");
+           System.out.println("\n ̿' ̿'\\̵͇̿̿\\з=(◕_◕)=ε/̵͇̿̿/'̿'̿ ̿ " + "\n" +
+               "   " +   "!!!LETS GO!!!\n");
 
            System.out.println("Choose Difficulty:");
            System.out.println("1 = Easy" + "\n" + "2 = Medium" + "\n" + "3 = Hard");
