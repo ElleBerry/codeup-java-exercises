@@ -3,6 +3,6 @@ public class ServerNameGenerator {
    static String[] noun = {"Stuff", "Buildings", "Magic", "Tree", "Soup", "Horse", "Mouse", "Elf", "Utensil", "Fountain"};
 
    public static String words(String[] strings){
-       return
+       return words(adj);
    }
 }

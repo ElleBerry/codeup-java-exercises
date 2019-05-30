@@ -1,4 +1,3 @@
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class ConsoleExercise {
@@ -27,8 +26,8 @@ public class ConsoleExercise {
         int length = sc.nextInt();
         System.out.println("What is the width of the Codeup Classroom?");
         int width = sc.nextInt();
-        System.out.printf("The length of the Codeup classroom is %s and the width is %s", length, width);
-//        int area = 2(width * length);
-        System.out.println("The area of the Codeup classroom is%");
+        System.out.printf("The length of the Codeup classroom is %s and the width is %s%n", length, width);
+        int area = 2*(width * length);
+        System.out.println("The area of the Codeup classroom is " + area);
     }
 }
